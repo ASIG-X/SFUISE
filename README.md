@@ -1,8 +1,9 @@
 # SFUISE (Spline Fusion-Based Ultra-Wideband-Inertial State Estimation)
 ## -- Continuous-Time Ultra-Wideband-Inertial Fusion
 ### News 
-* 2024-04: We have moved the official code repository of SFUISE to here under the newly established group [ASIG](https://kailaili.github.io/). We will continue to maintain and release related code within this repository. Stay tuned with our progress!  
-Note the previous code [repository](https://github.com/KIT-ISAS/SFUISE) is **no longer** being maintained since the maintainers has no accessibility to it any more.
+* 2024-04: We have moved the official code repository of SFUISE to here under the newly established group [ASIG](https://kailaili.github.io/). We will continue to maintain and release related code within this repository. Stay tuned with our progress!
+  
+  Note the previous code [repository](https://github.com/KIT-ISAS/SFUISE) is **no longer** being maintained since the maintainers has no accessibility to it any more.
 
 ## Introduction
 This is the code repository of SFUISE, the first online continuous-time UWB-inertial state estimation system in ROS. Quaternion-based cubic B-splines are exploited to represent states continuously over time with efficient solutions to time derivatives and spatial differentiations in closed form. The functional core of the system is a novel sliding-window spline fitting scheme that is equipped with a customized implementation of LM method.
