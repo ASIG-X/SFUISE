@@ -1,5 +1,10 @@
 # SFUISE (Spline Fusion-Based Ultra-Wideband-Inertial State Estimation)
 ## -- Continuous-Time Ultra-Wideband-Inertial Fusion
+### News 
+* 2024-04: We have moved the official code repository of SFUISE to here under the newly established group [ASIG](https://kailaili.github.io/). We will continue to maintain and release related code within this repository. Stay tuned with our progress!  
+Note the previous code [repository](https://github.com/KIT-ISAS/SFUISE) is **no longer** being maintained since the maintainers has no accessibility to it any more.
+
+## Introduction
 This is the code repository of SFUISE, the first online continuous-time UWB-inertial state estimation system in ROS. Quaternion-based cubic B-splines are exploited to represent states continuously over time with efficient solutions to time derivatives and spatial differentiations in closed form. The functional core of the system is a novel sliding-window spline fitting scheme that is equipped with a customized implementation of LM method.
 
 The system supports UWB-inertial fusion for both ToA and TDoA principles of ultra-wideband ranging with minimized external dependencies. See below for usage of SFUISE using public and our own recorded data sets. Detailed information about the system can be found in our paper on [arXiv](https://arxiv.org/abs/2301.09033) or [IEEE](https://doi.org/10.1109/LRA.2023.3281932), and demonstrated on [Youtube](https://www.youtube.com/watch?v=v9bbcskwPnw).
@@ -50,9 +55,9 @@ roslaunch sfuise sfuise_test_isas-walk1.launch
 rosbag play ISAS-Walk1.bag
 ```
 ## Contributors
-Kailai Li (Email: kailai.li@liu.se)
+Kailai Li (Email: kailai.li@rug.nl)
 
-Ziyu Cao (Email: ziyu.cao@kit.edu)
+Ziyu Cao (Email: ziyu.cao@liu.se)
 ## Credits
 We hereby recommend reading [lie-spline-experiments](https://gitlab.com/tum-vision/lie-spline-experiments) for reference. The IMU integration was derived from [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion).
 ## License
